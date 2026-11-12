@@ -84,7 +84,8 @@ img { max-width: 100%; }
 .author-text { display: grid; gap: 22px; min-width: 0; justify-items: start; }
 .author-name { font-family: var(--display); font-size: clamp(2.6rem, 6.5vw, 4.5rem); line-height: .95; font-weight: 400; }
 .author-name em { display: block; color: var(--accent); font-style: italic; padding-left: .8em; }
-.author-role { font-size: var(--step--1); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.author-role { display: grid; gap: 6px; font-size: var(--step--1); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.author-founder { color: var(--ink); font-weight: 600; }
 .author-quote { font-family: var(--serif); font-style: italic; font-size: clamp(1.35rem, 2.4vw, 1.75rem); line-height: 1.3; max-width: 32ch;
   border-left: 2px solid var(--accent); padding-left: 18px; }
 .author-text > p:not(.author-quote) { color: #DDD2CD; max-width: 56ch; }
@@ -231,7 +232,10 @@ img { max-width: 100%; }
     <div class="author-text">
       <span class="eyebrow">Автор проекта</span>
       <h2 id="author-h" class="author-name">Маргарита<em>Матвеева</em></h2>
-      <span class="author-role">Продюсер</span>
+      <div class="author-role">
+        <span class="author-founder">Основатель «GRAND AMORE» / «GRAND LAB»</span>
+        <span>Певица. Режиссер. Организатор. Продюсер.</span>
+      </div>
       <p class="author-quote">«Хороший голос заслуживает того, чтобы его услышали. Моя работа — сделать так, чтобы это случилось».</p>
       <p>Маргарита помогает артистам выйти из режима «звоните, договоримся» и говорить с заказчиком на его языке: понятными пакетами, сильным шоурилом и цельным визуальным стилем.</p>
       <p>Она смотрит на группу одновременно глазами зрителя и глазами заказчика. Так эмоции со сцены превращаются в предложение, на которое хочется ответить «да».</p>
