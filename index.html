@@ -73,6 +73,29 @@ img { max-width: 100%; }
 .tag { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); font-weight: 600; letter-spacing: .1em; text-transform: uppercase; font-size: .75rem; }
 .tag::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor; box-shadow: 0 0 10px currentColor; }
 
+/* Author */
+.author { padding-block: clamp(48px, 8vw, 96px); display: grid; gap: clamp(28px, 5vw, 64px); align-items: center; }
+@media (min-width: 860px) { .author { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); } }
+.portrait { position: relative; margin: 0; max-width: 460px; justify-self: center; width: 100%; }
+.portrait img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 20%; border-radius: 2px;
+  box-shadow: 0 30px 80px -24px rgba(224, 38, 60, .3), 0 0 0 1px var(--line); }
+.portrait::before { content: ""; position: absolute; inset: -12px auto auto -12px; width: 40%; height: 40%;
+  border-left: 2px solid var(--accent); border-top: 2px solid var(--accent); pointer-events: none; }
+.author-text { display: grid; gap: 22px; min-width: 0; justify-items: start; }
+.author-name { font-family: var(--display); font-size: clamp(2.6rem, 6.5vw, 4.5rem); line-height: .95; font-weight: 400; }
+.author-name em { display: block; color: var(--accent); font-style: italic; padding-left: .8em; }
+.author-role { font-size: var(--step--1); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.author-quote { font-family: var(--serif); font-style: italic; font-size: clamp(1.35rem, 2.4vw, 1.75rem); line-height: 1.3; max-width: 32ch;
+  border-left: 2px solid var(--accent); padding-left: 18px; }
+.author-text > p:not(.author-quote) { color: #DDD2CD; max-width: 56ch; }
+.btn { display: inline-flex; align-items: center; gap: 12px; margin-top: 8px; padding: 16px 30px; border-radius: 99px;
+  background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; font-size: .9rem;
+  box-shadow: 0 14px 40px -12px rgba(224, 38, 60, .7); transition: background .25s ease, transform .25s ease, box-shadow .25s ease; }
+.btn::after { content: "→"; font-size: 1.1em; transition: transform .25s ease; }
+.btn:hover { background: #F0344A; transform: translateY(-2px); box-shadow: 0 18px 48px -12px rgba(224, 38, 60, .85); }
+.btn:hover::after { transform: translateX(4px); }
+@media (prefers-reduced-motion: reduce) { .btn, .btn::after { transition: none; } .btn:hover { transform: none; } .btn:hover::after { transform: none; } }
+
 /* Acts */
 .act { border-top: 1px solid var(--line); padding-block: clamp(40px, 6vw, 72px); display: grid; gap: 24px; }
 .act:first-child { border-top: 0; }
@@ -199,6 +222,23 @@ img { max-width: 100%; }
     </div>
   </div>
 </section>
+
+<div class="wrap">
+  <section class="author" aria-labelledby="author-h">
+    <figure class="portrait">
+      <img src="media/margarita.jpg" alt="Маргарита Матвеева в чёрном бархатном костюме" loading="lazy" width="900" height="1351">
+    </figure>
+    <div class="author-text">
+      <span class="eyebrow">Автор проекта</span>
+      <h2 id="author-h" class="author-name">Маргарита<em>Матвеева</em></h2>
+      <span class="author-role">Продюсер</span>
+      <p class="author-quote">«Хороший голос заслуживает того, чтобы его услышали. Моя работа — сделать так, чтобы это случилось».</p>
+      <p>Маргарита помогает артистам выйти из режима «звоните, договоримся» и говорить с заказчиком на его языке: понятными пакетами, сильным шоурилом и цельным визуальным стилем.</p>
+      <p>Она смотрит на группу одновременно глазами зрителя и глазами заказчика. Так эмоции со сцены превращаются в предложение, на которое хочется ответить «да».</p>
+      <a class="btn" href="https://vk.ru/matveevaproducer" target="_blank" rel="noopener">Связаться</a>
+    </div>
+  </section>
+</div>
 
 <div class="wrap">
   <section class="act" aria-labelledby="a1">
