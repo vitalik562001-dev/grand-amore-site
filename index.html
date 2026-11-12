@@ -176,6 +176,12 @@ img { max-width: 100%; }
 .close h2 { font-family: var(--display); font-size: clamp(2.2rem, 6vw, 4rem); line-height: 1; font-weight: 400; }
 .close h2 em { color: var(--accent); }
 .close p { max-width: 58ch; color: #DDD2CD; }
+.cta { text-align: center; background: radial-gradient(90% 110% at 50% 100%, var(--accent-deep) 0%, var(--band) 50%, var(--bg) 100%); border-top: 1px solid var(--line); }
+.cta .wrap { padding-block: clamp(64px, 10vw, 128px); display: grid; gap: 22px; justify-items: center; }
+.cta h2 { font-family: var(--display); font-size: clamp(2.4rem, 7vw, 4.75rem); line-height: 1; font-weight: 400; max-width: 16ch; }
+.cta h2 em { color: var(--accent); }
+.cta p { max-width: 52ch; color: #DDD2CD; font-size: var(--step-1); font-family: var(--serif); line-height: 1.35; }
+.cta .btn { padding: 18px 38px; font-size: 1rem; }
 .foot { padding-block: 22px 40px; font-size: .8rem; color: var(--muted); display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
 .foot img { width: 32px; height: 32px; opacity: .8; }
 @media (prefers-reduced-motion: reduce) { .gallery img { transition: none; } .gallery figure:hover img { transform: none; } }
@@ -360,6 +366,15 @@ img { max-width: 100%; }
     <span class="eyebrow">Следующий шаг</span>
     <h2 id="a6">Начнём с <em>декабря</em></h2>
     <p>Новогодний сезон уже идёт. Предлагаю за неделю закончить упаковку и разослать новогоднее предложение компаниям города, пока даты ещё свободны. Шоурил можно использовать уже сегодня.</p>
+  </div>
+</section>
+
+<section class="cta" aria-labelledby="cta-h">
+  <div class="wrap">
+    <span class="eyebrow">Бронирование дат</span>
+    <h2 id="cta-h">Хотите незабываемое <em>шоу</em> или праздник?</h2>
+    <p>Свадьба, юбилей, корпоратив или городское событие — пять живых голосов GRAND AMORE превратят его в вечер, который гости будут вспоминать годами. Напишите нам, расскажите о празднике, и мы предложим программу и свободные даты.</p>
+    <a class="btn" href="https://vk.ru/matveevaproducer" target="_blank" rel="noopener">Написать нам</a>
   </div>
 </section>
 
