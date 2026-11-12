@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Коммерческое предложение для вокальной группы GRAND AMORE: шоурил, фото, анализ и 10 идей.">
+<link rel="icon" href="media/logo.png">
+<style>html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Предложение GRAND AMORE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Golos+Text:wght@400;500;600&display=swap">
+<style>
+/* Layout: a night concert programme in the group's black-and-red. Poster hero, then the reel on a
+   full-bleed red-lit band, then numbered acts with a narrow margin column for labels.
+   Single deliberate dark look — no light theme. */
+:root {
+  --bg: #0B0708;          /* stage black, warm */
+  --band: #140A0C;        /* slightly lifted black for bands */
+  --ink: #F4EDE8;         /* ivory */
+  --muted: #A6979A;
+  --line: #2E1C20;
+  --accent: #E0263C;      /* stage crimson */
+  --accent-deep: #7A0F1D; /* curtain red */
+  --accent-soft: #2A0E14;
+  --display: "Bodoni Moda", "Didot", "Times New Roman", serif;
+  --serif: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
+  --sans: "Golos Text", "Segoe UI", system-ui, sans-serif;
+  --step--1: 0.875rem; --step-0: 1.0625rem; --step-1: 1.3rem; --step-2: 1.75rem; --step-3: 2.5rem;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: var(--step-0); line-height: 1.6; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.wrap { max-width: 1160px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 500; }
+p { margin: 0; }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+img { max-width: 100%; }
+
+/* Masthead */
+.top { padding-block: 16px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+  font-size: var(--step--1); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: 12px; color: var(--ink); }
+.brand img { width: 44px; height: 44px; }
+
+/* Hero */
+.hero { padding-block: clamp(28px, 5vw, 56px); display: grid; gap: clamp(24px, 4vw, 56px); align-items: center; }
+@media (min-width: 900px) { .hero { grid-template-columns: 1fr 1fr; } }
+.poster { position: relative; margin: 0; min-width: 0; }
+.poster img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 2px;
+  box-shadow: 0 30px 80px -20px rgba(224, 38, 60, .35), 0 0 0 1px var(--line); }
+.poster::after { content: ""; position: absolute; inset: auto -10px -10px auto; width: 38%; height: 38%;
+  border-right: 2px solid var(--accent); border-bottom: 2px solid var(--accent); pointer-events: none; }
+.hero-text { display: grid; gap: 24px; min-width: 0; }
+.eyebrow { font-size: var(--step--1); letter-spacing: .14em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+.mark { font-family: var(--display); font-size: clamp(3rem, 8vw, 5.75rem); line-height: .9; }
+.mark em { display: block; color: var(--accent); font-style: italic; padding-left: .9em; }
+.lede { font-family: var(--serif); font-size: clamp(1.4rem, 2.6vw, 1.95rem); line-height: 1.25; max-width: 30ch; }
+.facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 24px; color: var(--muted); font-size: var(--step--1); border-top: 1px solid var(--line); padding-top: 20px; }
+@media (min-width: 560px) { .facts { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.facts b { display: block; font-family: var(--display); font-weight: 400; font-size: var(--step-2); color: var(--ink); line-height: 1.1; font-variant-numeric: lining-nums; }
+
+/* Reel band */
+.band { background: radial-gradient(120% 90% at 50% 0%, var(--accent-deep) 0%, var(--band) 55%, var(--bg) 100%); border-block: 1px solid var(--line); }
+.band .wrap { padding-block: clamp(36px, 6vw, 72px); display: grid; gap: 20px; }
+.band-head { display: flex; justify-content: space-between; align-items: end; gap: 12px 24px; flex-wrap: wrap; }
+.band-head h2 { font-family: var(--serif); font-size: clamp(1.9rem, 4vw, 2.75rem); line-height: 1.05; }
+.band-head p { color: var(--muted); font-size: var(--step--1); max-width: 40ch; }
+.reel { background: #000; aspect-ratio: 16 / 9; max-width: 100%; border-radius: 2px; overflow: hidden; box-shadow: 0 30px 80px -30px rgba(0,0,0,.9); }
+.reel video { width: 100%; height: 100%; display: block; object-fit: cover; }
+.tag { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); font-weight: 600; letter-spacing: .1em; text-transform: uppercase; font-size: .75rem; }
+.tag::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor; box-shadow: 0 0 10px currentColor; }
+
+/* Acts */
+.act { border-top: 1px solid var(--line); padding-block: clamp(40px, 6vw, 72px); display: grid; gap: 24px; }
+.act:first-child { border-top: 0; }
+@media (min-width: 900px) { .act { grid-template-columns: 220px 1fr; gap: 40px; } }
+.act-label { font-size: var(--step--1); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.act-label span { display: block; font-family: var(--display); font-size: var(--step-3); letter-spacing: 0; color: var(--accent); line-height: 1; margin-bottom: 8px; text-transform: none; }
+.act-body { min-width: 0; display: grid; gap: 28px; }
+.act h2 { font-family: var(--serif); font-size: clamp(1.9rem, 4vw, 2.75rem); line-height: 1.1; }
+.intro { color: var(--muted); max-width: 62ch; }
+
+/* Programme list */
+.now { display: grid; gap: 28px; }
+@media (min-width: 1000px) { .now { grid-template-columns: 1fr 260px; align-items: start; } }
+.prog { margin: 0; display: grid; min-width: 0; }
+.prog div { display: grid; grid-template-columns: 1fr; gap: 4px 28px; padding-block: 16px; border-bottom: 1px dotted var(--line); }
+@media (min-width: 640px) { .prog div { grid-template-columns: 180px 1fr; } }
+.prog dt { font-family: var(--serif); font-size: var(--step-1); font-weight: 600; }
+.prog dd { margin: 0; min-width: 0; max-width: 64ch; color: #DDD2CD; }
+.prog .num { font-variant-numeric: tabular-nums; color: var(--accent); font-weight: 600; }
+.afisha { margin: 0; max-width: 320px; }
+.afisha img { display: block; width: 100%; border-radius: 2px; box-shadow: 0 0 0 1px var(--line); }
+.afisha figcaption { font-size: .8rem; color: var(--muted); margin-top: 8px; }
+
+/* Gallery */
+.gallery { columns: 2 220px; column-gap: 10px; }
+@media (min-width: 900px) { .gallery { columns: 3; } }
+.gallery figure { margin: 0 0 10px; break-inside: avoid; position: relative; overflow: hidden; border-radius: 2px; }
+.gallery img { display: block; width: 100%; height: auto; transition: transform .6s ease, filter .6s ease; filter: saturate(.92); }
+.gallery figure:hover img { transform: scale(1.03); filter: saturate(1.05); }
+.gallery figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 12px 10px; font-size: .8rem; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--ink); background: linear-gradient(to top, rgba(11,7,8,.85), rgba(11,7,8,0)); }
+
+/* Strengths & gaps */
+.split { display: grid; gap: 32px; }
+@media (min-width: 760px) { .split { grid-template-columns: 1fr 1fr; } }
+.col h3 { font-size: var(--step--1); font-weight: 600; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 10px; color: var(--muted); }
+.list { list-style: none; margin: 0; padding: 0; display: grid; }
+.list li { padding-block: 14px; border-bottom: 1px solid var(--line); display: grid; gap: 4px; }
+.list strong { font-weight: 600; }
+.list p { color: var(--muted); font-size: .97rem; }
+.fix { margin-top: 6px; font-size: .9rem; display: flex; gap: 8px; align-items: baseline; }
+.fix::before { content: "→"; color: var(--accent); font-weight: 600; }
+.fix.done { color: var(--accent); font-weight: 500; }
+.fix.done::before { content: "✓"; }
+
+/* Positioning */
+.versus { display: grid; border: 1px solid var(--line); border-radius: 2px; overflow: hidden; }
+@media (min-width: 640px) { .versus { grid-template-columns: 1fr 1fr; } }
+.versus > div { padding: 24px; display: grid; gap: 8px; align-content: start; }
+.versus > div + div { border-top: 1px solid var(--line); background: linear-gradient(135deg, var(--accent-deep), var(--accent-soft)); }
+@media (min-width: 640px) { .versus > div + div { border-top: 0; border-left: 1px solid var(--line); } }
+.versus .who { font-size: var(--step--1); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.versus > div + div .who, .versus > div + div .intro { color: #E9D3D3; }
+.versus .what { font-family: var(--serif); font-size: var(--step-2); line-height: 1.15; }
+
+/* Ideas */
+.ideas { list-style: none; margin: 0; padding: 0; display: grid; counter-reset: idea; }
+@media (min-width: 760px) { .ideas { grid-template-columns: 1fr 1fr; column-gap: 40px; } }
+.ideas li { counter-increment: idea; display: grid; grid-template-columns: 2.6rem 1fr; gap: 4px 12px; padding-block: 18px; border-bottom: 1px solid var(--line); }
+.ideas li::before { content: counter(idea, decimal-leading-zero); grid-row: span 3; font-family: var(--display); font-size: 1.6rem; line-height: 1; color: var(--accent); font-variant-numeric: lining-nums; }
+.ideas h3 { font-family: var(--serif); font-size: var(--step-1); font-weight: 600; line-height: 1.2; }
+.ideas p { color: var(--muted); font-size: .95rem; }
+.ideas .for { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: #C98B92; font-weight: 600; }
+.ideas li.hot h3::after { content: "Сезон сейчас"; margin-left: 10px; font-family: var(--sans); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink); background: var(--accent); padding: 2px 8px; border-radius: 99px; vertical-align: 3px; white-space: nowrap; }
+
+/* Plan */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; }
+@media (min-width: 760px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+.steps li { border-top: 2px solid var(--accent); padding-top: 14px; display: grid; gap: 8px; align-content: start; }
+.steps .when { font-size: var(--step--1); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+.steps h3 { font-family: var(--serif); font-size: var(--step-2); line-height: 1.1; }
+.steps ul { margin: 0; padding-left: 1.1em; color: var(--muted); font-size: .95rem; display: grid; gap: 4px; }
+
+/* Closing */
+.close { background: radial-gradient(100% 120% at 0% 100%, var(--accent-deep) 0%, var(--bg) 60%); border-top: 1px solid var(--line); }
+.close .wrap { padding-block: clamp(56px, 9vw, 110px); display: grid; gap: 18px; justify-items: start; }
+.close h2 { font-family: var(--display); font-size: clamp(2.2rem, 6vw, 4rem); line-height: 1; font-weight: 400; }
+.close h2 em { color: var(--accent); }
+.close p { max-width: 58ch; color: #DDD2CD; }
+.foot { padding-block: 22px 40px; font-size: .8rem; color: var(--muted); display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.foot img { width: 32px; height: 32px; opacity: .8; }
+@media (prefers-reduced-motion: reduce) { .gallery img { transition: none; } .gallery figure:hover img { transform: none; } }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <span class="brand"><img src="media/logo.png" alt="Монограмма GRAND AMORE">Коммерческое предложение</span>
+    <span>Петрозаводск · ноябрь 2026</span>
+  </header>
+
+  <section class="hero">
+    <figure class="poster">
+      <img src="media/hero.jpg" alt="Афиша: вокальная группа Гранд Аморе, четыре вокалистки в серебряных очках">
+    </figure>
+    <div class="hero-text">
+      <span class="eyebrow">Вокальная группа · 5 лет на сцене</span>
+      <h1 class="mark">GRAND<em>Amore</em></h1>
+      <p class="lede">Пять голосов и полный зал на юбилее. Осталось упаковать это так, чтобы заказчик сказал «да» после первого письма.</p>
+      <div class="facts">
+        <div><b>5</b>лет группе</div>
+        <div><b>5</b>голосов</div>
+        <div><b>≈2 000</b>подписчиков ВК</div>
+        <div><b>97</b>репостов анонса</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="band" aria-labelledby="reel-h">
+  <div class="wrap">
+    <div class="band-head">
+      <div style="display:grid; gap:10px">
+        <span class="tag">Шоурил готов</span>
+        <h2 id="reel-h">81 секунда, которые продают</h2>
+      </div>
+      <p>Свадьбы, корпоративы, концертная сцена и городские фестивали. Живой вокал каждого номера, финал с контактами.</p>
+    </div>
+    <div class="reel">
+      <video controls preload="metadata" playsinline poster="media/poster.jpg">
+        <source src="media/showreel.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="act" aria-labelledby="a1">
+    <div class="act-label"><span>I</span>Что есть сейчас</div>
+    <div class="act-body">
+      <h2 id="a1">Сильный продукт, который пока продаётся по телефону</h2>
+      <div class="now">
+        <dl class="prog">
+          <div><dt>Продукт</dt><dd>Профессиональная вокальная группа из 5 человек: 4 вокалистки и 1 вокалист. Хиты разных лет, современные песни в своих аранжировках и собственные композиции.</dd></div>
+          <div><dt>Клиенты</dt><dd>Свадьбы, корпоративы, фестивали, частные праздники. Петрозаводск, Карелия и другие регионы.</dd></div>
+          <div><dt>Второе направление</dt><dd>Продюсерский центр «Гранд Лаб»: занятия по вокалу и сценическому мастерству.</dd></div>
+          <div><dt>Статус</dt><dd>Группе 5 лет. <span class="num">10 ноября 2026</span> прошёл юбилейный концерт «5 глав нашей истории» в ДК «Машиностроитель» с продажей билетов.</dd></div>
+          <div><dt>Аудитория</dt><dd>Около <span class="num">2 тыс.</span> подписчиков. Закреп собрал <span class="num">163</span> лайка и <span class="num">97</span> репостов, для такой базы это хорошая вовлечённость. В комментариях живые отзывы зрителей.</dd></div>
+          <div><dt>Визуал</dt><dd>Профессиональная съёмка, единый стиль в красно-чёрных тонах, премиальная подача.</dd></div>
+          <div><dt>Контакты</dt><dd>Один телефон (Маргарита) и почта.</dd></div>
+        </dl>
+        <figure class="afisha">
+          <img src="media/afisha.jpg" alt="Афиша юбилейного концерта GRAND AMORE «5 глав нашей истории», 10 ноября" loading="lazy">
+          <figcaption>Афиша юбилейного концерта, 10 ноября 2026</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="act" aria-labelledby="a-gal">
+    <div class="act-label"><span>II</span>Фото с выступлений</div>
+    <div class="act-body">
+      <h2 id="a-gal">Студия, сцена, праздник</h2>
+      <div class="gallery">
+        <figure><img src="media/g1.jpg" alt="Пять участниц в чёрных костюмах на розовом фоне" loading="lazy"><figcaption>Студийная съёмка</figcaption></figure>
+        <figure><img src="media/g3.jpg" alt="Группа поёт на фестивальной сцене, зрители тянут руки" loading="lazy"><figcaption>Городской фестиваль</figcaption></figure>
+        <figure><img src="media/g8.jpg" alt="Вокалистка в полосатом костюме и тёмных очках на новогоднем корпоративе" loading="lazy"><figcaption>Новогодний корпоратив</figcaption></figure>
+        <figure><img src="media/g7.jpg" alt="Выступление под белым шатром на летнем празднике" loading="lazy"><figcaption>Выездной праздник</figcaption></figure>
+        <figure><img src="media/g2.jpg" alt="Группа в серебряных и чёрных образах с зеркальным шаром" loading="lazy"><figcaption>Промо-съёмка</figcaption></figure>
+        <figure><img src="media/g4.jpg" alt="Вокалистка в белом костюме поёт в микрофон" loading="lazy"><figcaption>Живой вокал</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="act" aria-labelledby="a2">
+    <div class="act-label"><span>III</span>Сильные стороны и пробелы</div>
+    <div class="act-body">
+      <h2 id="a2">Что уже продаёт, и что мешает продавать</h2>
+      <div class="split">
+        <div class="col">
+          <h3>Сильные стороны</h3>
+          <ul class="list">
+            <li><strong>Пять голосов вместо одного певца</strong><p>Можно разложить песню на партии и спеть а капелла. Сольный исполнитель так не может, и это легко объяснить клиенту.</p></li>
+            <li><strong>Собственные песни</strong><p>На их основе можно делать авторские продукты: песню на заказ, гимн компании.</p></li>
+            <li><strong>Юбилей и концерт в ДК</strong><p>Пять лет работы и свой концерт с билетами дают доверие. Это не «ребята с минусовками».</p></li>
+            <li><strong>«Гранд Лаб»</strong><p>Можно продавать не только выступления, но и обучение: мастер-классы, тимбилдинги.</p></li>
+            <li><strong>Карелия как туристический регион</strong><p>Отели, теплоходы и турпакеты, куда можно встроить выступления.</p></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Пробелы и что с ними делаем</h3>
+          <ul class="list">
+            <li><strong>Нет пакетов, цен «от» и шага «как заказать»</strong><p>Клиенту приходится звонить вслепую.</p><span class="fix">Три пакета с ценой «от» и простая заявка</span></li>
+            <li><strong>Нет шоурила на 60–90 секунд</strong><p>Нечем быстро показать, как группа звучит на свадьбе, корпоративе и сцене.</p><span class="fix done">Готов: 81 секунда, смотрите выше</span></li>
+            <li><strong>Отзывы разбросаны по комментариям</strong><p>Их не видно тому, кто выбирает артистов на праздник.</p><span class="fix">Собрать отзывы в один блок с фото</span></li>
+            <li><strong>2 тыс. подписчиков мало для B2B</strong><p>Компании смотрят на факты, а не на цифры в соцсети.</p><span class="fix">Опора на факты: годы, мероприятия, площадки, клиенты</span></li>
+            <li><strong>Один контакт</strong><p>Если человек занят или в отпуске, сделка теряется.</p><span class="fix">Второй контакт и форма заявки</span></li>
+            <li><strong>Конкуренция с Kvatro</strong><p>Kvatro при Карельской филармонии занимает нишу классического кроссовера.</p><span class="fix">Своё место: живая праздничная группа</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="act" aria-labelledby="a3">
+    <div class="act-label"><span>IV</span>Позиционирование</div>
+    <div class="act-body">
+      <h2 id="a3">Не спорить с филармонией, а занять праздник</h2>
+      <div class="versus">
+        <div><span class="who">Kvatro · Карельская филармония</span><span class="what">Академический классический кроссовер</span><p class="intro">Концертный зал, строгий репертуар, публика филармонии.</p></div>
+        <div><span class="who">GRAND AMORE</span><span class="what">Эмоциональная, живая, праздничная группа</span><p class="intro">Свадьбы, корпоративы, фестивали. Хиты, которые зал поёт вместе, свои песни и шоу.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="act" aria-labelledby="a4">
+    <div class="act-label"><span>V</span>10 идей для КП</div>
+    <div class="act-body">
+      <h2 id="a4">Что предложить заказчикам</h2>
+      <ol class="ideas">
+        <li><h3>«Песня вашей истории»</h3><p>Авторская песня о паре, юбиляре или компании. Исполнение на празднике и студийная запись в подарок.</p><span class="for">Свадьбы · юбилеи · компании</span></li>
+        <li><h3>Свадебные пакеты «по главам»</h3><p>Церемония, фуршет, живой первый танец, шоу на банкете. Три уровня: Amore, Grand, Grand Amore.</p><span class="for">Пары и свадебные агентства</span></li>
+        <li class="hot"><h3>Новогодний корпоратив</h3><p>Готовая программа на 30 и 60 минут и бонус за раннее бронирование. Декабрьские даты разбирают именно сейчас.</p><span class="for">HR-отделы компаний</span></li>
+        <li><h3>Тимбилдинг «Хор за 60 минут»</h3><p>Сотрудники за час разучивают песню на голоса и поют её вместе с группой в конце вечера. Совместно с «Гранд Лаб».</p><span class="for">Корпоративные клиенты</span></li>
+        <li><h3>Гимн компании</h3><p>Песня или джингл к юбилею, открытию или запуску продукта. Исполнение, студийная запись и клип.</p><span class="for">Крупные работодатели Карелии</span></li>
+        <li><h3>Программа для туристов</h3><p>Музыкальный вечер в отеле, на турбазе или теплоходе до Кижей и Валаама. Ставка или процент от турпакета.</p><span class="for">Отели и туроператоры</span></li>
+        <li><h3>«Поющие официанты»</h3><p>Группа работает на празднике под прикрытием и внезапно начинает петь. Каждое видео становится бесплатной рекламой.</p><span class="for">Предложения руки, юбилеи</span></li>
+        <li><h3>Резидентство в ресторане</h3><p>Постоянные вечера раз в неделю или месяц. Заведению поток броней, группе стабильный доход и витрина.</p><span class="for">Рестораны и отели города</span></li>
+        <li><h3>«Песни вашей молодости»</h3><p>Хиты 70–90-х на пять голосов для юбилеев 50, 60 и 70 лет. Подарок от детей родителям.</p><span class="for">Семейные праздники</span></li>
+        <li><h3>Спонсорство и гранты</h3><p>Партнёрские пакеты на концертах, городские праздники, Президентский фонд культурных инициатив.</p><span class="for">Бизнес и администрация</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="act" aria-labelledby="a5">
+    <div class="act-label"><span>VI</span>План работы</div>
+    <div class="act-body">
+      <h2 id="a5">Три шага от упаковки к заявкам</h2>
+      <ol class="steps">
+        <li><span class="when">Шаг 1 · Упаковка</span><h3>Показать товар лицом</h3><ul><li>Шоурил (готов)</li><li>Три пакета с ценой «от»</li><li>Блок отзывов и фактов</li><li>Второй контакт и форма заявки</li></ul></li>
+        <li><span class="when">Шаг 2 · Продукты</span><h3>Собрать предложения</h3><ul><li>Новогодний корпоратив, сразу</li><li>Свадебные пакеты к сезону</li><li>Тимбилдинг с «Гранд Лаб»</li><li>Песня на заказ</li></ul></li>
+        <li><span class="when">Шаг 3 · Продажи</span><h3>Выйти к заказчикам</h3><ul><li>Рассылка КП компаниям Петрозаводска</li><li>Свадебные агентства и площадки</li><li>Отели и туроператоры Карелии</li><li>Заявки на городские события</li></ul></li>
+      </ol>
+    </div>
+  </section>
+</div>
+
+<section class="close" aria-labelledby="a6">
+  <div class="wrap">
+    <span class="eyebrow">Следующий шаг</span>
+    <h2 id="a6">Начнём с <em>декабря</em></h2>
+    <p>Новогодний сезон уже идёт. Предлагаю за неделю закончить упаковку и разослать новогоднее предложение компаниям города, пока даты ещё свободны. Шоурил можно использовать уже сегодня.</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer class="foot">
+    <span>Предложение для вокальной группы GRAND AMORE</span>
+    <img src="media/logo.png" alt="">
+    <span>Фото, кадры и звук — материалы группы</span>
+  </footer>
+</div>
+</body>
+</html>
